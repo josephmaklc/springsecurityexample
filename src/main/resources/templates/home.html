@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Spring Security Example</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <p/>
+		<p/>
+		<p/> go to com.optimal.solutions.springsecuritydemo.configure package, pick one of the WebSecurityConfig java files
+		 to specify how want to do authentication. You can only choose one way, so need to comment out others 
+		 <p/>
+		 I have config for:
+		 <ul><li>Basic Auth</li><li>Default Login Form</li><li>Custom Login Form</li><li>Custom User Details Service</li></ul>
+		<p/>
+		<p/>In login screen, try user/user$ for regular user, manager/manager$ for manager</p>
+		<h3>
+        Click <a th:href="@{/hello}">here</a> to see a greeting, a page that can only be accessed after login.
+        <br/>
+        Click <a th:href="@{/manageronly}">here</a> to try manager only page.
+        </h3>
+    </body>
+</html>
